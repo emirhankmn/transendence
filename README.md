@@ -61,7 +61,7 @@ Yazılımınız hoş bir kullanıcı arayüzü ve tüm arkadaşlarınızla Pong 
 
 Bu belgede yeşil renkle vurgulanan kelimeler teknoloji seçimlerini temsil eder ve zamanla değişecektir. Konunun sürümüne dikkat edin.
 
-```
+```phyton
 * Bir özelliği veya modülü tamamen sağlayan bir kütüphane veya araç kullanımı yasaktır.
 * Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara (kullanılabilir, kullanılmalı, kullanılamaz) uyulmalıdır.
 * Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
@@ -73,11 +73,13 @@ Bu belgede yeşil renkle vurgulanan kelimeler teknoloji seçimlerini temsil eder
 
 Projeniz aşağıdaki kurallara uymalıdır:
 
+```phyton
 Bazı kısıtlamalar belirli modül seçimleriyle değiştirilebilir.
+```
 
 * Siteyi backend olmadan veya backend ile geliştirebilirsiniz.
 
-  * Backend kullanırsanız saf PHP kullanmalı, framework kullanamazsınız. Ancak Framework modülü bu gerekliliği geçersiz kılabilir.
+  * Backend kullanırsanız saf ```bash PHP ```kullanmalı, framework kullanamazsınız. Ancak Framework modülü bu gerekliliği geçersiz kılabilir.
   * Backend veya framework bir veritabanı kullanıyorsa Database modülü kısıtlamalarına uymalısınız.
 * Frontend TypeScript tabanlı olmalıdır. Ancak FrontEnd modülü bu gerekliliği değiştirebilir.
 * Web siteniz tek sayfalık uygulama olmalıdır. Kullanıcı tarayıcıdaki Geri ve İleri düğmelerini kullanabilmelidir.
