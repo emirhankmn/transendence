@@ -79,9 +79,9 @@ Bazı kısıtlamalar belirli modül seçimleriyle değiştirilebilir.
 
 * Siteyi backend olmadan veya backend ile geliştirebilirsiniz.
 
-  * Backend kullanırsanız saf ```<span style="color: green;">PHP</span> ```kullanmalı, framework kullanamazsınız. Ancak Framework modülü bu gerekliliği geçersiz kılabilir.
+  * Backend kullanırsanız saf ``` PHP ```kullanmalı, framework kullanamazsınız. Ancak Framework modülü bu gerekliliği geçersiz kılabilir.
   * Backend veya framework bir veritabanı kullanıyorsa Database modülü kısıtlamalarına uymalısınız.
-* Frontend TypeScript tabanlı olmalıdır. Ancak FrontEnd modülü bu gerekliliği değiştirebilir.
+* Frontend ``` TypeScript ` tabanlı olmalıdır. Ancak FrontEnd modülü bu gerekliliği değiştirebilir.
 * Web siteniz tek sayfalık uygulama olmalıdır. Kullanıcı tarayıcıdaki Geri ve İleri düğmelerini kullanabilmelidir.
 * Web siteniz en güncel kararlı Mozilla Firefox sürümü ile uyumlu olmalıdır. Elbette diğer tarayıcılarla da uyumlu olabilir!
 * Kullanıcı siteyi gezerken işlenmemiş hata veya uyarı görmemelidir.
