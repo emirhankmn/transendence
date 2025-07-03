@@ -119,23 +119,29 @@ Bu web sitesinin ana amacı, diğer oyunculara karşı Pong oynamaktır.
 * Tüm oyuncular aynı kurallara uymalıdır, paddle hızları da dahil. Bu gereklilik AI kullanıldığında da geçerlidir; AI normal bir oyuncu ile aynı hıza sahip olmalıdır.
 
 * Oyun, varsayılan frontend kısıtlamalarına (yukarıda belirtilen) uymalıdır veya FrontEnd modülü veya Graphics modülü ile geçersiz kılınabilir. Görsel estetik değişebilir ancak oyun yine de orijinal Pong’un (1972) ruhunu korumalıdır.
-
+```phyton
 * Bir özelliği veya modülü tamamen sağlayan bir kütüphane veya araç kullanımı yasaktır.
 
-* Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara (can, must, can’t) uyulmalıdır.
+* Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara 
+(can, must, can’t) uyulmalıdır.
 
-* Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
+* Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi
+çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
 
-* Değerlendirme sırasında, ekip proje yönergelerinde açıkça onaylanmamış ve projenin kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
+* Değerlendirme sırasında, ekip proje yönergelerinde açıkça onaylanmamış ve projenin 
+kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
 
-* Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
+* Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının 
+meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
 
 * Turnuva sistemi kullanıcı kaydı ile veya kayıtsız çalışabilmelidir.
 
   * Standart Kullanıcı Yönetimi modülü olmadan: kullanıcılar manuel olarak takma ad girer.
-  * Modül ile: takma adlar kayıtlı hesaplara bağlıdır, kalıcı istatistikler ve arkadaş listeleri sağlar.
+  * Modül ile: takma adlar kayıtlı hesaplara bağlıdır, kalıcı istatistikler ve arkadaş 
+  listeleri sağlar.
 
     Modül turnuva mantığını genişletir; yerine geçmez.
+```
 
 ## III.4 Güvenlik Endişeleri
 
@@ -146,8 +152,14 @@ Bu web sitesinin ana amacı, diğer oyunculara karşı Pong oynamaktır.
 * Bir backend veya başka özellikleriniz varsa, tüm yönler için HTTPS bağlantısı etkinleştirilmelidir (örneğin ws yerine wss kullanılmalıdır).
 * Formlar ve kullanıcı girişi için doğrulama mekanizmaları uygulamalısınız; backend yoksa ana sayfada, backend varsa sunucu tarafında uygulanmalıdır.
 * JWT Security modülünü iki faktörlü kimlik doğrulama ile uygulamayı seçseniz de seçmeseniz de sitenizin güvenliğini önceliklendirmek önemlidir. Örneğin bir API oluşturuyorsanız rotalarınızı koruyun. JWT tokenleri kullanmasanız bile site güvenli olmalıdır.
+```phyton
 * Şifre hashleme algoritması güçlü olmalıdır.
-* Güvenlik nedeniyle tüm kimlik bilgileri, API anahtarları, ortam değişkenleri vb. yerel olarak bir .env dosyasında saklanmalı ve git tarafından yok sayılmalıdır. Açıkta tutulan kimlik bilgileri projenizin başarısız olmasına sebep olur.
+```
+```phyton
+* Güvenlik nedeniyle tüm kimlik bilgileri, API anahtarları, ortam değişkenleri vb. yerel olarak 
+bir .env dosyasında saklanmalı ve git tarafından yok sayılmalıdır. Açıkta tutulan kimlik bilgileri 
+projenizin başarısız olmasına sebep olur.
+```
 
 ## IV Modüller
 
@@ -157,11 +169,18 @@ Artık projenin %25'ini tamamladınız, tebrikler!
 
 Projeyi %100 tamamlamak için en az 7 büyük modül gereklidir. Her modülü dikkatlice inceleyin çünkü bazıları temel sitenizde değişiklik gerektirebilir. Bu nedenle tüm konuyu dikkatlice okumanız şiddetle tavsiye edilir.
 
+```phyton
 * Bir özelliği veya modülü tamamen sağlayan bir kütüphane veya araç kullanımı yasaktır.
-* Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara (can, must, can’t) uyulmalıdır.
-* Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
-* Değerlendirme sırasında, ekip proje yönergelerinde açıkça onaylanmamış ve projenin kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
-* Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
+* Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara 
+(can, must, can’t) uyulmalıdır.
+* Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi
+çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
+* Değerlendirme sırasında, ekip proje yönergelerinde açıkça onaylanmamış ve projenin 
+kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
+* Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının 
+meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp 
+çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
+```
 
 İki Küçük Modül bir Büyük Modül sayılır.
 
