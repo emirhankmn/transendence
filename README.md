@@ -60,12 +60,13 @@ Yazılımınız hoş bir kullanıcı arayüzü ve tüm arkadaşlarınızla Pong 
 * Bu belgenin ikinci bölümü, zorunlu kısmı değiştirebilecek veya tamamlayabilecek ek modüller sunacaktır.
 
 Bu belgede yeşil renkle vurgulanan kelimeler teknoloji seçimlerini temsil eder ve zamanla değişecektir. Konunun sürümüne dikkat edin.
-
+```bash
 * Bir özelliği veya modülü tamamen sağlayan bir kütüphane veya araç kullanımı yasaktır.
 * Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara (kullanılabilir, kullanılmalı, kullanılamaz) uyulmalıdır.
 * Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
 * Değerlendirme sırasında, ekip proje yönergelerinde açıkça onaylanmamış ve projenin kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
 * Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
+```
 
 ## III.2 Asgari Teknik Gereklilik
 
