@@ -60,7 +60,8 @@ Yazılımınız hoş bir kullanıcı arayüzü ve tüm arkadaşlarınızla Pong 
 * Bu belgenin ikinci bölümü, zorunlu kısmı değiştirebilecek veya tamamlayabilecek ek modüller sunacaktır.
 
 Bu belgede yeşil renkle vurgulanan kelimeler teknoloji seçimlerini temsil eder ve zamanla değişecektir. Konunun sürümüne dikkat edin.
-```bash
+
+```phyton
 * Bir özelliği veya modülü tamamen sağlayan bir kütüphane veya araç kullanımı yasaktır.
 * Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara (kullanılabilir, kullanılmalı, kullanılamaz) uyulmalıdır.
 * Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
