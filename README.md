@@ -81,18 +81,20 @@ Bazı kısıtlamalar belirli modül seçimleriyle değiştirilebilir.
 
   * Backend kullanırsanız saf ``` PHP ```kullanmalı, framework kullanamazsınız. Ancak Framework modülü bu gerekliliği geçersiz kılabilir.
   * Backend veya framework bir veritabanı kullanıyorsa Database modülü kısıtlamalarına uymalısınız.
-* Frontend ``` TypeScript ` tabanlı olmalıdır. Ancak FrontEnd modülü bu gerekliliği değiştirebilir.
+* Frontend ``` TypeScript ``` tabanlı olmalıdır. Ancak FrontEnd modülü bu gerekliliği değiştirebilir.
 * Web siteniz tek sayfalık uygulama olmalıdır. Kullanıcı tarayıcıdaki Geri ve İleri düğmelerini kullanabilmelidir.
-* Web siteniz en güncel kararlı Mozilla Firefox sürümü ile uyumlu olmalıdır. Elbette diğer tarayıcılarla da uyumlu olabilir!
+* Web siteniz en güncel kararlı ``` Mozilla Firefox ``` sürümü ile uyumlu olmalıdır. Elbette diğer tarayıcılarla da uyumlu olabilir!
 * Kullanıcı siteyi gezerken işlenmemiş hata veya uyarı görmemelidir.
-* Sitenizi çalıştırmak için Docker kullanmalısınız. Her şey tek bir komut satırı ile çalışacak şekilde bağımsız bir container içinde başlatılmalıdır.
+* Sitenizi çalıştırmak için ``` Docker ``` kullanmalısınız. Her şey tek bir komut satırı ile çalışacak şekilde bağımsız bir container içinde başlatılmalıdır.
 
+```phyton
 Root yetkisiz modda container kullanıyorsanız bazı ek kısıtlamalar olabilir:
 
 * Çalışma zamanı /goinfre veya /sgoinfre dizininde yer almalıdır.
 * Non-root UID kullanılan container içinde host ile bind-mount volume kullanamazsınız.
 
 Mevcut gerekliliklere (yukarıda yeşil renkte vurgulanan) ve cluster yapılandırmalarına bağlı olarak farklı stratejiler benimsemeniz gerekebilir: sanal makine içinde container çözümü, değişikliklerden sonra container’ı yeniden inşa etme, root UID kullanan özel bir imaj hazırlama gibi.
+```
 
 ## III.3 Oyun
 
