@@ -93,7 +93,10 @@ Root yetkisiz modda container kullanıyorsanız bazı ek kısıtlamalar olabilir
 * Çalışma zamanı /goinfre veya /sgoinfre dizininde yer almalıdır.
 * Non-root UID kullanılan container içinde host ile bind-mount volume kullanamazsınız.
 
-Mevcut gerekliliklere (yukarıda yeşil renkte vurgulanan) ve cluster yapılandırmalarına bağlı olarak farklı stratejiler benimsemeniz gerekebilir: sanal makine içinde container çözümü, değişikliklerden sonra container’ı yeniden inşa etme, root UID kullanan özel bir imaj hazırlama gibi.
+Mevcut gerekliliklere (yukarıda yeşil renkte vurgulanan) ve cluster yapılandırmalarına 
+bağlı olarak farklı stratejiler benimsemeniz gerekebilir: sanal makine içinde container 
+çözümü, değişikliklerden sonra container’ı yeniden inşa etme, root UID kullanan özel bir 
+imaj hazırlama gibi.
 ```
 
 ## III.3 Oyun
