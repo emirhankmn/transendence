@@ -250,14 +250,17 @@ Bu modüller Pong oyununuzda gelişmiş web özelliklerinin entegrasyonunu sağl
   Bu büyük modülde backend geliştirmek için belirlenen web framework'ü ``` Fastify ``` ve ``` Node.js ```'tir.
   
   ```phyton 
-  Bu modülünün kısıtlamalarını kullanmadan, varsayılan arka frontend'ini kullanarak backend oluşturabilirsiniz (yukarıda zorunlu kısımda belirtildiği gibi). Ancak, bu modül yalnızca gereksinimlerini yerine getirirseniz geçerli olacaktır.
+  Bu modülünün kısıtlamalarını kullanmadan, varsayılan arka frontend'ini kullanarak 
+  backend oluşturabilirsiniz (yukarıda zorunlu kısımda belirtildiği gibi). 
+  Ancak, bu modül yalnızca gereksinimlerini yerine getirirseniz geçerli olacaktır.
   ```
 
 * Küçük modül: Frontend geliştirmek için bir framework veya araç seti kullanın.
   Frontend geliştirme, TypeScript’e ek olarak yalnızca ``` Tailwind CSS ``` kullanılarak yapılmalıdır.
   ```phyton
-  Bu modülünün kısıtlamalarını kullanmadan, varsayılan frontend yönergelerini kullanarak 
-  (yukarıda zorunlu kısımda belirtildiği gibi) bir frontend oluşturabilirsiniz. Ancak, bu modül yalnızca gereksinimlerini yerine getirdiğiniz takdirde geçerli olacaktır.
+  Bu modülünün kısıtlamalarını kullanmadan, varsayılan frontend yönergelerini kullanarak
+  (yukarıda zorunlu kısımda belirtildiği gibi) bir frontend oluşturabilirsiniz. 
+  Ancak, bu modül yalnızca gereksinimlerini yerine getirdiğiniz takdirde geçerli olacaktır.
   ```
 
 * Küçük modül: Backend için bir veritabanı kullanın.
@@ -378,21 +381,24 @@ Bu modüller projeye veri odaklı unsurlar kazandırır. Büyük modül, oynanı
 
 * Büyük modül: Bir AI rakibi ekleyin
 
-  Bu büyük modülde amaç oyuna bir AI oyuncu entegre etmektir. Bu görev için A\* algoritmasının kullanılması yasaktır.
+  Bu büyük modülde amaç oyuna bir AI oyuncu entegre etmektir. Bu görev için **A\* algoritmasının** kullanılması yasaktır.
 
   ◦ Kullanıcılar için zorlayıcı ve ilgi çekici bir oynanış deneyimi sağlayacak bir AI rakibi geliştirin.
 
   ◦ AI insan davranışını taklit etmelidir, yani AI uygulamanızda klavye girişini simüle etmelisiniz. Kısıtlama şudur: AI oyunu yalnızca saniyede bir yenileyerek görebilir, bu nedenle çarpmaları ve diğer hareketleri önceden tahmin etmelidir.
-
+```bash
   Eğer Oyun Özelleştirme Seçenekleri modülünü uyguladıysanız, AI güçlendirmeleri kullanmalıdır.
+```
 
   ◦ AI mantığı ve karar alma süreçleri, AI oyuncusunun akıllıca ve stratejik hamleler yapmasına olanak tanımalıdır.
 
   ◦ A\* dışında alternatif algoritma ve teknikler araştırarak etkili bir AI oyuncu oluşturun.
 
   ◦ AI farklı oyun senaryolarına ve kullanıcı etkileşimlerine uyum sağlamalıdır.
-
-  AI'nın nasıl çalıştığını değerlendirme sırasında detaylı şekilde açıklamanız gerekecektir. "Hiçbir şey yapmayan" bir AI kesinlikle yasaktır; ara sıra kazanma yeteneğine sahip olmalıdır.
+```phyton
+  AI'nın nasıl çalıştığını değerlendirme sırasında detaylı şekilde açıklamanız gerekecektir.
+  "Hiçbir şey yapmayan" bir AI kesinlikle yasaktır; ara sıra kazanma yeteneğine sahip olmalıdır.
+```
 
   Bu büyük modül, A\* algoritmasına dayanmadan oyuna heyecan ve rekabet katan bir AI rakibi ekleyerek oyunu geliştirmeyi amaçlar.
 
@@ -458,11 +464,11 @@ Bu siber güvenlik modülleri, projenin güvenlik yapısını güçlendirmek iç
 
 ## IV.7 DevOps
 
-Bu modüller, projenin altyapısını ve mimarisini geliştirmeye odaklanır. Büyük modüller, ELK (Elasticsearch, Logstash, Kibana) kullanarak verimli log yönetimi için altyapı kurulumu, backend'i esnek ve ölçeklenebilir mikro servisler olarak tasarlama ve Prometheus/Grafana kullanarak kapsamlı bir sistem izleme altyapısı sağlamayı kapsar.
+Bu modüller, projenin altyapısını ve mimarisini geliştirmeye odaklanır. Büyük modüller,``` ELK ``` (Elasticsearch, Logstash, Kibana) kullanarak verimli log yönetimi için altyapı kurulumu, backend'i esnek ve ölçeklenebilir mikro servisler olarak tasarlama ve ``` Prometheus/Grafana ``` kullanarak kapsamlı bir sistem izleme altyapısı sağlamayı kapsar.
 
-* Büyük modül: ELK (Elasticsearch, Logstash, Kibana) ile Log Yönetimi için Altyapı Kurulumu
+* Büyük modül: ``` ELK ``` (Elasticsearch, Logstash, Kibana) ile Log Yönetimi için Altyapı Kurulumu
 
-  Bu büyük modülün amacı, ELK yığını (Elasticsearch, Logstash, Kibana) kullanarak sağlam bir log yönetimi ve analiz altyapısı oluşturmaktır.
+  Bu büyük modülün amacı, ``` ELK ``` yığını (Elasticsearch, Logstash, Kibana) kullanarak sağlam bir log yönetimi ve analiz altyapısı oluşturmaktır.
 
   ◦ Elasticsearch'u dağıtarak log verilerini verimli şekilde depolayın ve indeksleyin, aramayı ve erişimi kolaylaştırın.
 
@@ -472,27 +478,27 @@ Bu modüller, projenin altyapısını ve mimarisini geliştirmeye odaklanır. B�
 
   &#x20;◦ Log verisi depolamasını etkili yönetmek için veri saklama ve arşivleme politikaları tanımlayın.&#x20;
 
-  ◦ Log verisini ve ELK bileşenlerine erişimi korumak için güvenlik önlemleri uygulayın.&#x20;
+  ◦ Log verisini ve ``` ELK ``` bileşenlerine erişimi korumak için güvenlik önlemleri uygulayın.&#x20;
 
-  Bu büyük modül, ELK yığını kullanarak güçlü bir log yönetimi ve analiz sistemi kurarak etkin sorun giderme, izleme ve sistem performansına dair içgörü sunmayı amaçlar.
+  Bu büyük modül,``` ELK ```yığını kullanarak güçlü bir log yönetimi ve analiz sistemi kurarak etkin sorun giderme, izleme ve sistem performansına dair içgörü sunmayı amaçlar.
 
 * Küçük modül: İzleme Sistemi
 
-  Bu küçük modülün amacı, Prometheus ve Grafana kullanarak kapsamlı bir izleme altyapısı kurmaktır.
+  Bu küçük modülün amacı, ``` Prometheus ve Grafana ``` kullanarak kapsamlı bir izleme altyapısı kurmaktır.
 
-  ◦ Prometheus'u izleme ve uyarı aracı olarak dağıtarak çeşitli sistem bileşenlerinden metrik toplayın ve sağlık/durum takibini yapın.
+  ◦ ``` Prometheus'u ``` izleme ve uyarı aracı olarak dağıtarak çeşitli sistem bileşenlerinden metrik toplayın ve sağlık/durum takibini yapın.
 
   ◦ Farklı hizmetler, veritabanları ve altyapı bileşenlerinden metrik toplamak için veri ihracatçıları ve entegrasyonları yapılandırın.
 
-  ◦ Grafana kullanarak özel panolar ve görselleştirmeler oluşturun, sistem metriklerini ve performansı gerçek zamanlı olarak görüntüleyin.
+  ◦ ``` Grafana ``` kullanarak özel panolar ve görselleştirmeler oluşturun, sistem metriklerini ve performansı gerçek zamanlı olarak görüntüleyin.
 
-  ◦ Prometheus'ta uyarı kuralları tanımlayarak kritik sorunları ve anormallikleri proaktif olarak tespit edin ve yanıt verin.
+  ◦ ``` Prometheus ```'ta uyarı kuralları tanımlayarak kritik sorunları ve anormallikleri proaktif olarak tespit edin ve yanıt verin.
 
   ◦ Geçmiş metrik verileri için uygun veri saklama ve depolama stratejileri belirleyin.
 
-  ◦ Hassas izleme verilerini korumak için Grafana'da güvenli kimlik doğrulama ve erişim kontrol mekanizmaları uygulayın.
+  ◦ Hassas izleme verilerini korumak için ``` Grafana ```'da güvenli kimlik doğrulama ve erişim kontrol mekanizmaları uygulayın.
 
-  Bu küçük modül, Prometheus ve Grafana kullanarak gerçek zamanlı görünürlük ve proaktif sorun tespiti sağlayarak sistem performansını ve güvenilirliğini artırmayı amaçlar.
+  Bu küçük modül, ``` Prometheus ve Grafana ``` kullanarak gerçek zamanlı görünürlük ve proaktif sorun tespiti sağlayarak sistem performansını ve güvenilirliğini artırmayı amaçlar.
 
 * Büyük modül: Backend’i Mikro Servisler Olarak Tasarlamak
 
@@ -512,15 +518,15 @@ Bu modüller, projenin altyapısını ve mimarisini geliştirmeye odaklanır. B�
 
 * Büyük modül: Gelişmiş 3D Tekniklerinin Uygulanması
 
-  Bu büyük modül, "Grafik" başlığı altında Pong oyununun görsel yönlerini geliştirmeye odaklanır. Daha sürükleyici bir oyun deneyimi yaratmak için gelişmiş 3D tekniklerinin kullanımını tanıtır. Özellikle, istenen görsel efektleri elde etmek için Pong oyunu Babylon.js kullanılarak geliştirilecektir.
+  Bu büyük modül, "Grafik" başlığı altında Pong oyununun görsel yönlerini geliştirmeye odaklanır. Daha sürükleyici bir oyun deneyimi yaratmak için gelişmiş 3D tekniklerinin kullanımını tanıtır. Özellikle, istenen görsel efektleri elde etmek için Pong oyunu ``` Babylon.js ``` kullanılarak geliştirilecektir.
 
-  ◦ Gelişmiş 3D Grafik: Bu modülün ana hedefi, Pong oyununun görsel kalitesini artırmak için gelişmiş 3D grafik tekniklerini uygulamaktır. Babylon.js kullanılarak oyuncuları oyun ortamına tamamen dahil eden etkileyici görsel efektler oluşturulur.
+  ◦ Gelişmiş 3D Grafik: Bu modülün ana hedefi, Pong oyununun görsel kalitesini artırmak için gelişmiş 3D grafik tekniklerini uygulamaktır. ``` Babylon.js ``` kullanılarak oyuncuları oyun ortamına tamamen dahil eden etkileyici görsel efektler oluşturulur.
 
   ◦ Sürükleyici Oynanış: Gelişmiş 3D tekniklerinin eklenmesi, kullanıcıya görsel olarak etkileyici ve çekici bir Pong oyunu sunarak genel oynanış deneyimini geliştirir.
 
-  ◦ Teknoloji Entegrasyonu: Bu modül için seçilen teknoloji Babylon.js'dir. 3D grafiklerin oluşturulmasında bu araçlar kullanılacak ve uyumluluk ile optimum performans sağlanacaktır.
+  ◦ Teknoloji Entegrasyonu: Bu modül için seçilen teknoloji ``` Babylon.js ```'dir. 3D grafiklerin oluşturulmasında bu araçlar kullanılacak ve uyumluluk ile optimum performans sağlanacaktır.
 
-  Bu büyük modül, gelişmiş 3D tekniklerini tanıtarak Pong oyununun görsel unsurlarını dönüştürmeyi amaçlar. Babylon.js kullanılarak oyunculara sürükleyici ve görsel olarak etkileyici bir oyun deneyimi sunmayı hedefler.
+  Bu büyük modül, gelişmiş 3D tekniklerini tanıtarak Pong oyununun görsel unsurlarını dönüştürmeyi amaçlar. ``` Babylon.js ``` kullanılarak oyunculara sürükleyici ve görsel olarak etkileyici bir oyun deneyimi sunmayı hedefler.
 
 ## IV.9 Erişilebilirlik
 
@@ -629,8 +635,9 @@ Bu modüller, web uygulamamızın erişilebilirliğini artırmak için tasarlanm
   ◦ CLI'nin web kullanıcılarına karşı Pong maçları için nasıl kullanılacağını açıklayan kapsamlı dokümantasyon ve rehber sunun.
 
   Bu büyük modül, CLI kullanıcılarını web oyuncularına API entegrasyonu ile sorunsuz şekilde bağlayarak birleşik ve etkileşimli bir oyun ortamı sunarak Pong oynanış deneyimini geliştirmeyi amaçlar.
-
+```bash
   Bu modülü tamamlamak istiyorsanız, önceki modülü yapmanız şiddetle tavsiye edilir.
+```
 
 ## V Bonus Kısım
 
@@ -638,15 +645,21 @@ Bu proje için bonus bölümü basit olacak şekilde tasarlanmıştır. Ek modü
 
 * Her bir küçük modül için beş puan verilecektir.
 * Her bir büyük modül için on puan verilecektir.
-
+```bash
 Bonus bölümü yalnızca zorunlu kısım MÜKEMMEL olduğunda değerlendirilecektir. "Mükemmel" demek, zorunlu kısmın tamamen tamamlanmış ve sorunsuz çalışıyor olması demektir. Tüm zorunlu gereklilikleri karşılamıyorsanız bonus bölümünüz kesinlikle değerlendirilmez.
+```
 
 ## VI Teslimat ve Eş Değerlendirme
 
 Görevlerinizi her zamanki gibi Git deposunda teslim edin. Savunma sırasında yalnızca deponuzdaki işler değerlendirilecektir. Dosya adlarının doğru olduğundan emin olmak için iki kez kontrol etmeniz önerilir.
-
+```phyton
 * Bir özelliği veya modülü tamamen sağlayan bir kütüphane veya araç kullanımı yasaktır.
-* Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara (kullanılabilir, kullanılmalı, kullanılamaz) uyulmalıdır.
-* Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
-* Değerlendirme sırasında ekip, konuda açıkça onaylanmamış ve konunun kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
-* Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
+* Üçüncü taraf bir kütüphane veya araç kullanımıyla ilgili doğrudan talimatlara 
+(kullanılabilir, kullanılmalı, kullanılamaz) uyulmalıdır.
+* Daha büyük bir özelliğin veya modülün alt bileşeni olan basit, benzersiz bir görevi 
+çözen küçük bir kütüphane veya aracın kullanımı serbesttir.
+* Değerlendirme sırasında ekip, konuda açıkça onaylanmamış ve konunun kısıtlamalarıyla 
+çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
+* Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının 
+meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
+```
