@@ -11,22 +11,22 @@
 - II Amaçlar
 
 - III Zorunlu Kısım
-- III.1 Genel Bakış
-- III.2 Asgari Teknik Gereklilik
-- III.3 Oyun
-- III.4 Güvenlik Endişeleri
+-- III.1 Genel Bakış
+-- III.2 Asgari Teknik Gereklilik
+-- III.3 Oyun
+-- III.4 Güvenlik Endişeleri
 
 - IV Modüller
-- IV.1 Genel Bakış
-- IV.2 Web
-- IV.3 Kullanıcı Yönetimi
-- IV.4 Oynanış ve Deneyim
-- IV.5 AI-Algoritma
-- IV.6 Siber Güvenlik
-- IV.7 DevOps
-- IV.8 Grafik
-- IV.9 Erişilebilirlik
-- IV.10 Sunucu Taraflı Pong
+-- IV.1 Genel Bakış
+-- IV.2 Web
+-- IV.3 Kullanıcı Yönetimi
+-- IV.4 Oynanış ve Deneyim
+-- IV.5 AI-Algoritma
+-- IV.6 Siber Güvenlik
+-- IV.7 DevOps
+-- IV.8 Grafik
+-- IV.9 Erişilebilirlik
+-- IV.10 Sunucu Taraflı Pong
 
 - V Bonus Kısım
 
