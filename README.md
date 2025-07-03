@@ -646,7 +646,9 @@ Bu proje için bonus bölümü basit olacak şekilde tasarlanmıştır. Ek modü
 * Her bir küçük modül için beş puan verilecektir.
 * Her bir büyük modül için on puan verilecektir.
 ```bash
-Bonus bölümü yalnızca zorunlu kısım MÜKEMMEL olduğunda değerlendirilecektir. "Mükemmel" demek, zorunlu kısmın tamamen tamamlanmış ve sorunsuz çalışıyor olması demektir. Tüm zorunlu gereklilikleri karşılamıyorsanız bonus bölümünüz kesinlikle değerlendirilmez.
+Bonus bölümü yalnızca zorunlu kısım MÜKEMMEL olduğunda değerlendirilecektir. 
+"Mükemmel" demek, zorunlu kısmın tamamen tamamlanmış ve sorunsuz çalışıyor olması demektir.
+Tüm zorunlu gereklilikleri karşılamıyorsanız bonus bölümünüz kesinlikle değerlendirilmez.
 ```
 
 ## VI Teslimat ve Eş Değerlendirme
