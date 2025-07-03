@@ -132,7 +132,8 @@ Bu web sitesinin ana amacı, diğer oyunculara karşı Pong oynamaktır.
 kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımını gerekçelendirecektir.
 
 * Değerlendirme sırasında değerlendirici, belirli bir kütüphane veya aracın kullanımının 
-meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
+meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp 
+çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
 
 * Turnuva sistemi kullanıcı kaydı ile veya kayıtsız çalışabilmelidir.
 
@@ -153,10 +154,10 @@ meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği vey
 * Formlar ve kullanıcı girişi için doğrulama mekanizmaları uygulamalısınız; backend yoksa ana sayfada, backend varsa sunucu tarafında uygulanmalıdır.
 * JWT Security modülünü iki faktörlü kimlik doğrulama ile uygulamayı seçseniz de seçmeseniz de sitenizin güvenliğini önceliklendirmek önemlidir. Örneğin bir API oluşturuyorsanız rotalarınızı koruyun. JWT tokenleri kullanmasanız bile site güvenli olmalıdır.
 ```phyton
-* Şifre hashleme algoritması güçlü olmalıdır.
+Şifre hashleme algoritması güçlü olmalıdır.
 ```
 ```phyton
-* Güvenlik nedeniyle tüm kimlik bilgileri, API anahtarları, ortam değişkenleri vb. yerel olarak 
+Güvenlik nedeniyle tüm kimlik bilgileri, API anahtarları, ortam değişkenleri vb. yerel olarak 
 bir .env dosyasında saklanmalı ve git tarafından yok sayılmalıdır. Açıkta tutulan kimlik bilgileri 
 projenizin başarısız olmasına sebep olur.
 ```
@@ -181,8 +182,9 @@ kısıtlamalarıyla çelişmeyen herhangi bir kütüphane veya araç kullanımı
 meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği veya modülü çözüp 
 çözmediğini (ve bu nedenle yasak olduğunu) belirleyecektir.
 ```
-
+```bash
 İki Küçük Modül bir Büyük Modül sayılır.
+```
 
 ## IV.1 Genel Bakış
 
@@ -245,29 +247,35 @@ meşru (ve izin verilen) olup olmadığını veya esasen tüm bir özelliği vey
 Bu modüller Pong oyununuzda gelişmiş web özelliklerinin entegrasyonunu sağlar.
 
 * Büyük modül: Backend geliştirmek için bir framework kullanın.
-  Bu büyük modülde backend geliştirmek için belirlenen web framework'ü Fastify ve Node.js'tir.
-
-  Bu modülün gerekliliklerini takip etmediğiniz sürece backend'i bu modülün kısıtlamaları olmadan oluşturabilirsiniz.
+  Bu büyük modülde backend geliştirmek için belirlenen web framework'ü ``` Fastify ``` ve ``` Node.js ```'tir.
+  
+  ```phyton 
+  Bu modülünün kısıtlamalarını kullanmadan, varsayılan arka frontend'ini kullanarak backend oluşturabilirsiniz (yukarıda zorunlu kısımda belirtildiği gibi). Ancak, bu modül yalnızca gereksinimlerini yerine getirirseniz geçerli olacaktır.
+  ```
 
 * Küçük modül: Frontend geliştirmek için bir framework veya araç seti kullanın.
-  Frontend geliştirme, TypeScript’e ek olarak yalnızca Tailwind CSS kullanılarak yapılmalıdır.
-
-  Bu modülün gerekliliklerini takip etmediğiniz sürece frontend’i varsayılan yönergelere göre oluşturabilirsiniz.
+  Frontend geliştirme, TypeScript’e ek olarak yalnızca ``` Tailwind CSS ``` kullanılarak yapılmalıdır.
+  ```phyton
+  Bu modülünün kısıtlamalarını kullanmadan, varsayılan frontend yönergelerini kullanarak 
+  (yukarıda zorunlu kısımda belirtildiği gibi) bir frontend oluşturabilirsiniz. Ancak, bu modül yalnızca gereksinimlerini yerine getirdiğiniz takdirde geçerli olacaktır.
+  ```
 
 * Küçük modül: Backend için bir veritabanı kullanın.
   Projedeki tüm veritabanı örnekleri için belirlenen veritabanı SQLite'tır. Bu seçim, proje bileşenleri arasında veri tutarlılığını ve uyumluluğu sağlar ve backend Framework modülü gibi diğer modüller için bir önkoşul olabilir.
 
 * Büyük modül: Turnuva skorunu Blockchain’de saklayın.
 
-  Bu büyük modül, Pong web sitesine turnuva skorlarını Blockchain üzerinde güvenli şekilde saklama özelliğini kazandırmayı amaçlar. Geliştirme ve test için bir test blockchain ortamı kullanılacaktır. Seçilen blockchain Avalanche, akıllı sözleşme dili Solidity'dir.
+  Bu büyük modül, Pong web sitesine turnuva skorlarını Blockchain üzerinde güvenli şekilde saklama özelliğini kazandırmayı amaçlar. Geliştirme ve test için bir test blockchain ortamı kullanılacaktır. Seçilen blockchain ``` Avalanche ```, akıllı sözleşme dili ``` Solidity ```'dir.
 
-  Blockchain entegrasyonu: Ana hedef Avalanche Blockchain'i siteye entegre ederek skorların güvenli ve değiştirilemez şekilde saklanmasını sağlamaktır.
+  ◦ Blockchain Entegrasyonu: Bu modülün temel amacı, blockchain teknolojisini — özellikle Avalanche — Pong web sitesine sorunsuz bir şekilde entegre etmektir. Bu entegrasyon, turnuva skorlarının güvenli ve değiştirilemez şekilde saklanmasını sağlar ve oyunculara şeffaf ve üzerinde oynama yapılamaz bir oyun başarı kaydı sunar.
 
-  Solidity Akıllı Sözleşmeleri: Blockchain ile etkileşim için Solidity akıllı sözleşmeleri geliştirilir. Bu sözleşmeler skorların kaydı, yönetimi ve alınması işlevini görür.
+  ◦ Solidity Akıllı Sözleşmeleri: Blockchain ile etkileşim kurmak için Solidity ile akıllı  sözleşmeler geliştireceğiz. Bu sözleşmeler, turnuva skorlarının kaydedilmesi, yönetilmesi ve geri alınmasından sorumlu olacaktır.
 
-  Test Blockchain: Tüm blockchain fonksiyonları test blockchain ortamında geliştirilir ve doğrulanır.
+  ◦ Blockchain Testi: Daha önce de belirtildiği gibi, geliştirme ve test süreçlerinde bir test  blockchain ağı kullanılacaktır. Bu sayede canlı bir blockchain ağında oluşabilecek riskler   olmadan, blockchain ile ilgili tüm işlevlerin kapsamlı bir şekilde doğrulanması sağlanır.
 
-  Uyumluluk: Blockchain işlevini entegre ederken Backend Framework modülü gibi diğer modüllerle bağlantılı olabilir. Backend'de Blockchain ile etkileşimi sağlamak için uyarlamalar gerekebilir.
+  ◦ Birlikte Çalışabilirlik (Interoperability): Bu modül, özellikle Backend Framework modülü olmak üzere diğer modüllere bağımlı olabilir. Blockchain işlevselliğinin entegre edilmesi, backend tarafında blockchain ile etkileşimi sağlamak için bazı düzenlemeler gerektirebilir.
+
+  Bu modülün uygulanmasıyla birlikte Pong web sitesini, blockchain tabanlı bir skor saklama   sistemiyle geliştirmeyi hedefliyoruz. Kullanıcılar, skorlarının bütünlüğünü sağlayan ek bir   güvenlik ve şeffaflık katmanından faydalanacak. Modül, blockchain geliştirme sürecine ilişkin   riskleri en aza indirmek için bir test blockchain ortamının kullanılmasını vurgulamaktadır.
 
   Bu modülü uygulayarak Pong web sitesine Blockchain tabanlı bir skor saklama sistemi kazandırmayı hedefliyoruz. Kullanıcılar, skorlarının bütünlüğünü garanti altına alan bu ek güvenlik ve şeffaflık katmanından faydalanacaktır. Modül, blockchain geliştirme ile ilgili riskleri en aza indirmek için bir test blockchain ortamının kullanımını vurgular.
 
@@ -287,10 +295,13 @@ Bu modül, Pong platformunda kullanıcı etkileşimleri ve erişim kontrolüyle 
   * Kullanıcı profilleri kazanılan ve kaybedilen oyunlar gibi istatistikleri gösterir.
   * Her kullanıcının 1v1 oyunları, tarihleri ve ilgili detayları içeren bir Maç Geçmişi vardır ve yalnızca oturum açan kullanıcılar erişebilir.
 
-    Aynı kullanıcı adları/e-posta adreslerinin yönetimi size bağlıdır; mantıklı bir çözüm sunmanız gerekir.
+  ```phyton
+    Aynı kullanıcı adları/e-posta adreslerinin yönetimi size bağlıdır; mantıklı bir çözüm
+    sunmanız gerekir.
+  ```
 
 * Büyük modül: Uzaktan kimlik doğrulama uygulama.
-  Bu modülde, Google Sign-in sistemi entegre edilecektir.
+  Bu modülde, ``` Google Sign-in ``` sistemi entegre edilecektir.
 
   * Kimlik doğrulama sistemi entegre edilerek kullanıcıların güvenli şekilde giriş yapması sağlanır.
   * Yetkiliden gerekli kimlik bilgileri ve izinler alınır.
@@ -306,8 +317,10 @@ Bu modüller projenin genel oynanış deneyimini geliştirmek için tasarlanmı�
 * Büyük modül: Uzak oyuncular
 
   İki oyuncunun uzaktan oynayabilmesi mümkün olmalıdır. Her oyuncu ayrı bir bilgisayarda, aynı web sitesine erişerek aynı Pong oyununu oynar.
-
-  Ağ sorunları, beklenmedik bağlantı kopmaları veya gecikmeler gibi durumları dikkate alın. En iyi kullanıcı deneyimini sunmalısınız.
+```phyton
+  Ağ sorunları, beklenmedik bağlantı kopmaları veya gecikmeler gibi durumları dikkate alın. 
+  En iyi kullanıcı deneyimini sunmalısınız.
+```
 
 * Büyük modül: Çoklu oyuncu
 
